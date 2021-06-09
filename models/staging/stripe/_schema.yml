@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  
+  - name: stg_stripe__payments
+    description: >
+        This model cleans up payment data
+    columns:
+      - name: payment_id
+        tests:
+          - unique
+          - not_null
